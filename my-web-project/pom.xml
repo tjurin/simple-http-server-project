@@ -15,7 +15,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.invidi</groupId>
+            <groupId>com.invidi.hiring</groupId>
             <artifactId>simple-web-server</artifactId>
             <version>0.1-SNAPSHOT</version>
         </dependency>
