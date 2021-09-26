@@ -16,11 +16,13 @@ public class MyController {
 
    @Path(value = "/data", method = RequestMethod.POST)
    public void saveKeyValuePair(@QueryParam("key") String key, @QueryParam("value") String value) {
+      System.out.println("saveKeyValuePair invoked");
       data.put(key, value);
    }
 
    @Path(value = "/data", method = RequestMethod.GET)
    public Result getValueByKey(@QueryParam("key") String key) {
+      System.out.println("getValueByKey invoked");
       String result = data.get(key);
       return new Result(result);
    }
@@ -32,6 +34,10 @@ public class MyController {
 
       public Result(String result) {
          this.result = result;
+      }
+
+      public void test(){
+
       }
    }
 }

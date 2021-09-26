@@ -22,6 +22,7 @@ angular.module('angularJsApp', ['ngResource']).controller('HomeCtrl', ['$scope',
         $http.get('/api/data?key=' + vm.getKey)
             .then(function success(response) {
                 vm.response = response.data.result;
+                console.log(response);
             }, function fail(data) {
                 console.log("Fail");
             });
